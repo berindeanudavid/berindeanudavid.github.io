@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despre Noi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-purple-200 text-gray-800 font-sans">
+  <header class="bg-purple-700 text-white py-4">
+    <div class="container mx-auto flex justify-between">
+      <a href="index.html" class="text-lg font-bold">Home</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-10 px-4">
+    <section class="transition-opacity duration-700 opacity-0" x-data x-init="$el.classList.remove('opacity-0')">
+      <h2 class="text-4xl font-bold text-center mb-8">Despre Noi</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        La Laboratorul de Criminalistică Digitală, ne dedicăm în totalitate descoperirii adevărului în mediul digital. Suntem o echipă de profesioniști cu o experiență vastă în domeniul criminalisticii digitale.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-700 opacity-0 transform translate-y-10" x-data x-init="$el.classList.remove('opacity-0', 'translate-y-10')">
+          <img src="C:/Users/Dutu/Desktop/WORK/EMANUEL/3.Prof. Radu Crisan/PROJECT/berindeanu.jpg" alt="David Berindeanu" class="rounded-md mb-4">
+          <h3 class="text-xl font-bold">David Berindeanu</h3>
+          <p class="text-gray-600">Expert forensic cu experiență remarcabilă în investigarea probelor digitale.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-700 opacity-0 transform translate-y-10" x-data x-init="$el.classList.remove('opacity-0', 'translate-y-10')">
+          <img src="C:/Users/Dutu/Desktop/WORK/EMANUEL/3.Prof. Radu Crisan/PROJECT/team.jpg" alt="Echipă Forensic" class="rounded-md mb-4">
+          <h3 class="text-xl font-bold">Echipă Forensic</h3>
+          <p class="text-gray-600">Profesioniști în utilizarea celor mai avansate instrumente digitale.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 transition-transform duration-700 opacity-0 transform translate-y-10" x-data x-init="$el.classList.remove('opacity-0', 'translate-y-10')">
+          <img src="C:/Users/Dutu/Desktop/WORK/EMANUEL/3.Prof. Radu Crisan/PROJECT/lab.jpg" alt="Laborator" class="rounded-md mb-4">
+          <h3 class="text-xl font-bold">Laborator Modern</h3>
+          <p class="text-gray-600">Dotat cu echipamente de ultimă generație pentru analiză avansată.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-purple-700 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Digital Forensics Lab. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[x-data]').forEach(function (el) {
+        el.classList.remove('opacity-0', 'translate-y-10');
+      });
+    });
+  </script>
+</body>
+</html>
